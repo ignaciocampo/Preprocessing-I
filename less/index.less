@@ -1,3 +1,4 @@
+@mobile: ~"(max-width: 500px)";
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -29,6 +30,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+@border: 20px;
+@background: rgb(61, 27, 27);
+
+
 body {
 	line-height: 1;
 }
@@ -54,6 +60,139 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color: rgb(46, 0, 0);
+	font-size: 10px;
+	color: rgb(224, 190, 195);
+	
+	
+	
 }
 
+
+	
+ 
+  .main-part{
+	  border: black 1px solid;
+	width: 60%;
+	display: flex;
+
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 4em;
+	height: 529px;
+	background-image: url(/images/nav-img.png);
+	margin-left: 20%;
+	flex-direction: column;
+	text-align: center;
+	@media (max-width: 500px){
+		background-image: none;
+
+
+	}
+	nav{
+		a{
+			text-align: center;
+			margin: 100px;
+			color: floralwhite;
+			text-decoration: none;
+
+			}
+		a:visited{
+			color: floralwhite;
+			text-decoration: none;
+		}	
+		}
+	
+}
+
+  #first-intro{
+	border: black 1px solid;
+	width: 70%;
+	  height: 1000px;
+	  border-radius: @border;
+	  display: flex;
+	 background-image: url(/images/lava-dung.jpg);
+	  align-content: center;
+	 flex-direction: column;
+	 margin-left: 20%;
+	  justify-content: stretch;
+	  align-items: center;
+	  @media (max-width: 500px) {
+		background-image: none;
+		
+	  }
+	  .first-part{
+		border: black 1px solid;
+		margin-top: 100px;
+	  border-radius: @border;
+	 height: 100%;
+	  font-size: 2em;
+	  width: 20em;
+	  margin-right: 1200px;
+      text-align: center;
+	  background-color: @background;
+	  @media (max-width: 500px) {
+		margin-left: 1150px;
+		
+	  }
+	
+	  h1{
+		font-size: 3em;
+	  }
+		}
+	  
+	  
+		
+	  }
+
+	  	 
+  #first-intro{
+	  .second-part{
+		border: black 1px solid;
+		
+	  
+	  height: 30%;
+	  font-size: 2em;
+	  width: 62em;
+	  margin-right: 400px;
+	  background-color: @background;
+	  border-radius: @border;
+	  @media (max-width: 500px){
+		width: 20em;
+		height: 50%;
+		margin-left: 350px;
+		text-align: center;
+		flex-wrap: wrap;
+		font-size: 2em;
+		border-color: none;
+	}
+	  h2{
+	font-size: 2.8em;
+	text-align: center;
+	  
+	  p{
+		  margin-top: 60px;
+		  margin-left: 10px;
+		  text-align: center;
+	  }
+	}
+	  }
+  }
+footer{
+	border: black 1px solid;
+	display: flex;
+	font-size: 2em;
+	text-align: center;
+	flex-direction: column;
+	height: 200px;
+	align-content: flex-start;
+	justify-content: flex-start;
+	@media (max-width: 500px){
+		margin: 10%;
+		margin-top: 100px;
+		border-color: none;
+	}
+}
+  
+ 
